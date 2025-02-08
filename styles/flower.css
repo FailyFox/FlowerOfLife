@@ -1,0 +1,88 @@
+.flower-container {
+    position: relative;
+    display: inline-block;
+    margin: 10%;
+}
+
+.flower-bg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.life-circle,
+.family-petal,
+.rest-petal,
+.friends-petal,
+.school-petal,
+.spirit-growth-petal,
+.health-petal,
+.hobbies-petal,
+.self-improve-petal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: auto;
+}
+
+.life-circle {
+    z-index: 2;
+}
+
+.family-petal {
+    width: 30%;
+    top: 20%;
+    left: 52%;
+    z-index: 1;
+}
+
+.rest-petal {
+    width: 40%;
+    top: 25%;
+    left: 75%;
+    z-index: 1;
+}
+
+.friends-petal {
+    width: 55%;
+    top: 53%;
+    left: 82%;
+    z-index: 1;
+}
+
+.school-petal {
+    width: 40%;
+    top: 73%;
+    left: 72%;
+    z-index: 1;
+}
+
+.spirit-growth-petal {
+    width: 30%;
+    top: 82%;
+    left: 53%;
+    z-index: 1;
+}
+
+.health-petal {
+    width: 40%;
+    top: 73%;
+    left: 28%;
+    z-index: 1;
+}
+
+.hobbies-petal {
+    width: 55%;
+    top: 50%;
+    left: 18%;
+    z-index: 1;
+}
+
+.self-improve-petal {
+    width: 40%;
+    top: 25%;
+    left: 28%;
+    z-index: 1;
+}
