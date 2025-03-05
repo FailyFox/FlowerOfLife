@@ -20,31 +20,35 @@
     height: auto;
 }
 
-.life-circle,
-.family-petal,
-.rest-petal,
-.friends-petal,
-.school-petal,
-.spirit-growth-petal,
-.health-petal,
-.hobbies-petal,
-.self-improve-petal {
+.petal-img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 30%;
     height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.petal-img:hover {
+    transform: translate(-50%, -50%) scale(1.2);
 }
 
 .life-circle {
-    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: auto;
+    border-radius: 100px;
+    z-index: 4;
 }
 
 .family-petal {
     top: 20%;
     left: 52%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .rest-petal {
@@ -93,5 +97,5 @@
     width: 40%;
     top: 25%;
     left: 28%;
-    z-index: 1;
+    z-index: 3;
 }
