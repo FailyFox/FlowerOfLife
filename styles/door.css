@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #12D788;
+}
+
+.doors-container {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    width: 90vw;
+    max-width: 740px;
+    margin-top: 150px;
+}
+
+.door-link {
+    position: relative;
+    display: block;
+    width: 70vw;
+    height: auto;
+}
+
+.door-link img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.lock {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lock:hover {
+    animation: rotate 0.3s forwards;
+}
+
+@media (max-width: 700px) {
+    .doors-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: 105px 310px;
+        transform: rotate(-10deg);
+    }
+}
