@@ -3,7 +3,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: #12D788;
 }
 
 .doors-container {
@@ -27,12 +26,6 @@ body {
     height: auto;
     object-fit: cover;
     border-radius: 5px;
-}
-
-.lock {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .lock:hover {
