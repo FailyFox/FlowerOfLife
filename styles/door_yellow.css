@@ -1,0 +1,9 @@
+body {
+    background-color: #F9FF45;
+}
+
+.lock {
+    position: absolute;
+    top: -5.5%;
+    left: 0.8%;
+}
