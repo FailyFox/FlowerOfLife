@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body, html {
+    background-color: #FaF8F3;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.crystal {
+    position: absolute;
+}
+
+.crystal-img {
+    transition: transform 0.3s ease;
+}
+
+.crystal:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .crystal:hover {
+        transform: scale(1.05);
+    }
+}
