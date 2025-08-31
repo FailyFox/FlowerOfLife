@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E3F6CB;
+}
+
+h1 {
+    text-align: center;
+    color: #0057b7;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 50px;
+    align-self: center;
+}
+
+@media (max-width: 1200px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
