@@ -11,7 +11,7 @@ switch (document.cookie) {
         document.getElementById("gold_envelope").setAttribute("href",
             "../garden/rest/gold_envelope.html");
         document.getElementById("pink_envelope").setAttribute("href",
-            "../indev.html");
+            "../garden/rest/pink_envelope.html");
         break;
     case "img=room; url=rest_petal.html":
         document.getElementById("crystal1").setAttribute("href",
