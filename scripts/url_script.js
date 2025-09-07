@@ -19,7 +19,7 @@ switch (document.cookie) {
         document.getElementById("crystal2").setAttribute("href",
             "rest/green_envelope.html");
         document.getElementById("crystal3").setAttribute("href",
-            "indev.html");
+            "rest/crystal3.html");
         document.getElementById("crystal4").setAttribute("href",
             "indev.html");
         document.getElementById("crystal5").setAttribute("href",
