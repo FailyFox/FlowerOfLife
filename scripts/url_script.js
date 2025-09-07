@@ -1,7 +1,7 @@
 switch (document.cookie) {
     case "img=garden; url=rest_petal.html":
         document.getElementById("blue_envelope").setAttribute("href",
-            "../indev.html");
+            "../garden/rest/blue_envelope.html");
         document.getElementById("green_envelope").setAttribute("href",
             "../indev.html");
         document.getElementById("red_envelope").setAttribute("href",
