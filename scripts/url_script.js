@@ -21,7 +21,7 @@ switch (document.cookie) {
         document.getElementById("crystal3").setAttribute("href",
             "rest/crystal3.html");
         document.getElementById("crystal4").setAttribute("href",
-            "indev.html");
+            "rest/crystal4.html");
         document.getElementById("crystal5").setAttribute("href",
             "indev.html");
         document.getElementById("crystal6").setAttribute("href",
