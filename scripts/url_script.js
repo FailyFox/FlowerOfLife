@@ -15,7 +15,7 @@ switch (document.cookie) {
         break;
     case "img=room; url=rest_petal.html":
         document.getElementById("crystal1").setAttribute("href",
-            "../indev.html");
+            "../garden/rest/crystal1.html");
         document.getElementById("crystal2").setAttribute("href",
             "../indev.html");
         document.getElementById("crystal3").setAttribute("href",
