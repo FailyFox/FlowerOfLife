@@ -5,7 +5,7 @@ switch (document.cookie) {
         document.getElementById("green_envelope").setAttribute("href",
             "../garden/rest/green_envelope.html");
         document.getElementById("red_envelope").setAttribute("href",
-            "../indev.html");
+            "../garden/rest/red_envelope.html");
         document.getElementById("orange_envelope").setAttribute("href",
             "../indev.html");
         document.getElementById("gold_envelope").setAttribute("href",
