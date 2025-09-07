@@ -23,7 +23,7 @@ switch (document.cookie) {
         document.getElementById("crystal4").setAttribute("href",
             "rest/crystal4.html");
         document.getElementById("crystal5").setAttribute("href",
-            "indev.html");
+            "rest/crystal5.html");
         document.getElementById("crystal6").setAttribute("href",
             "indev.html");
         break;
