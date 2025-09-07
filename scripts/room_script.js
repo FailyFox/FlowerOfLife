@@ -1,5 +1,5 @@
 var img = new Image();
-img.src = '../../pictures/room.png';
+img.src = '../pictures/room.png';
 document.cookie = "img=room";
 
 img.onload = function() {
