@@ -57,4 +57,33 @@ switch (true) {
                 "friends/songs.html");
         }
         break;
+    case document.cookie.includes("url=school.html"):
+        if(document.cookie.includes("img=garden")) {
+            document.getElementById("blue_envelope").setAttribute("href",
+                "petal_question.html");
+            document.getElementById("green_envelope").setAttribute("href",
+                "school/videos.html");
+            document.getElementById("red_envelope").setAttribute("href",
+                "school/red_envelope.html");
+            document.getElementById("orange_envelope").setAttribute("href",
+                "boomerang_of_love.html");
+            document.getElementById("gold_envelope").setAttribute("href",
+                "sun_of_gratitude.html");
+            document.getElementById("pink_envelope").setAttribute("href",
+                "school/songs.html");
+        } else if(document.cookie.includes("img=room")) {
+            document.getElementById("crystal1").setAttribute("href",
+                "boomerang_question.html");
+            document.getElementById("crystal2").setAttribute("href",
+                "school/videos.html");
+            document.getElementById("crystal3").setAttribute("href",
+                "school/crystal3.html");
+            document.getElementById("crystal4").setAttribute("href",
+                "sun_of_gratitude.html");
+            document.getElementById("crystal5").setAttribute("href",
+                "diary_page.html");
+            document.getElementById("crystal6").setAttribute("href",
+                "school/songs.html");
+        }
+        break;
 }

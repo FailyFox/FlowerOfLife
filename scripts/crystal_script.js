@@ -1,17 +1,17 @@
+let question = "What could it be? Share all your ideas about that. And then have a look at the definition in your book - page 35";
 switch (true) {
     case document.cookie.includes("url=rest.html"):
         document.getElementById("body").style.backgroundColor = "#E3F6CB";
         document.getElementById("img").style.filter = "drop-shadow(0 0 100px #A3D771)";
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is rest?";
-            document.getElementById("question").innerText = "What could it be?" +
-            "Share all your ideas about that. And then have a look at the definition in your book - page 35";
+            document.getElementById("question").innerText = question;
         }
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page 39";
         }
-        if (document.cookie.includes("img=garden") && document.getElementById("text")) {
-            document.getElementById("text").innerHTML = "page 40";
+        if (document.cookie.includes("img=garden") && document.getElementById("sun")) {
+            document.getElementById("sun").innerHTML = "page 40";
         }
         break;
     case document.cookie.includes("url=friends.html"):
@@ -25,7 +25,21 @@ switch (true) {
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";
         }
-        if (document.cookie.includes("img=garden") && document.getElementById("text")) {
+        if (document.cookie.includes("img=garden") && document.getElementById("sun")) {
+            document.getElementById("sun").innerHTML = "page";
+        }
+        break;
+    case document.cookie.includes("url=school.html"):
+        document.getElementById("body").style.backgroundColor = "#C1D6F9";
+        document.getElementById("img").style.filter = "drop-shadow(0 0 100px #7BA4EB)";
+        if (document.getElementById("petal") && document.getElementById("question")) {
+            document.getElementById("petal").innerText = "What is school?";
+            document.getElementById("question").innerText = question;
+        }
+        if (document.getElementById("diary")) {
+            document.getElementById("diary").innerText = "page";
+        }
+        if (document.cookie.includes("img=garden") && document.getElementById("sun")) {
             document.getElementById("sun").innerHTML = "page";
         }
         break;
