@@ -86,4 +86,33 @@ switch (true) {
                 "school/songs.html");
         }
         break;
+    case document.cookie.includes("url=spirit_growth.html"):
+        if(document.cookie.includes("img=garden")) {
+            document.getElementById("blue_envelope").setAttribute("href",
+                "petal_question.html");
+            document.getElementById("green_envelope").setAttribute("href",
+                "spirit_growth/videos.html");
+            document.getElementById("red_envelope").setAttribute("href",
+                "spirit_growth/red_envelope.html");
+            document.getElementById("orange_envelope").setAttribute("href",
+                "spirit_growth/boomerang_of_love.html");
+            document.getElementById("gold_envelope").setAttribute("href",
+                "sun_of_gratitude.html");
+            document.getElementById("pink_envelope").setAttribute("href",
+                "spirit_growth/songs.html");
+        } else if(document.cookie.includes("img=room")) {
+            document.getElementById("crystal1").setAttribute("href",
+                "boomerang_question.html");
+            document.getElementById("crystal2").setAttribute("href",
+                "spirit_growth/videos.html");
+            document.getElementById("crystal3").setAttribute("href",
+                "spirit_growth/crystal3.html");
+            document.getElementById("crystal4").setAttribute("href",
+                "sun_of_gratitude.html");
+            document.getElementById("crystal5").setAttribute("href",
+                "diary_page.html");
+            document.getElementById("crystal6").setAttribute("href",
+                "spirit_growth/songs.html");
+        }
+        break;
 }

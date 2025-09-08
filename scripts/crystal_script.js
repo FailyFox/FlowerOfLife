@@ -1,11 +1,11 @@
-let question = "What could it be? Share all your ideas about that. And then have a look at the definition in your book - page 35";
+let question = "What could it be? Share all your ideas about that. And then have a look at the definition in your book - ";
 switch (true) {
     case document.cookie.includes("url=rest.html"):
         document.getElementById("body").style.backgroundColor = "#E3F6CB";
         document.getElementById("img").style.filter = "drop-shadow(0 0 100px #A3D771)";
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is rest?";
-            document.getElementById("question").innerText = question;
+            document.getElementById("question").innerText = question + "page 35";
         }
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page 39";
@@ -18,7 +18,7 @@ switch (true) {
         document.getElementById("body").style.backgroundColor = "#DBEEFB";
         document.getElementById("img").style.filter = "drop-shadow(0 0 100px #EBC732)";
         if (document.getElementById("petal") && document.getElementById("question")) {
-            document.getElementById("petal").innerText = "Who is a Friend?";
+            document.getElementById("petal").innerText = "Who is a friend?";
             document.getElementById("question").innerText = "What is a friendship?" +
             "Share all your ideas about that. And then have a look at the definition in your book - page 21";
         }
@@ -34,7 +34,23 @@ switch (true) {
         document.getElementById("img").style.filter = "drop-shadow(0 0 100px #7BA4EB)";
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is school?";
-            document.getElementById("question").innerText = question;
+            document.getElementById("question").innerText = question + "page";
+        }
+        if (document.getElementById("diary")) {
+            document.getElementById("diary").innerText = "page";
+        }
+        if (document.cookie.includes("img=garden") && document.getElementById("sun")) {
+            document.getElementById("sun").innerHTML = "page";
+        }
+        break;
+    case document.cookie.includes("url=spirit_growth.html"):
+        document.getElementById("body").style.backgroundColor = "#F4D7FF";
+        document.getElementById("img").style.filter = "drop-shadow(0 0 100px #B358BA)";
+        if (document.getElementById("petal") && document.getElementById("question")) {
+            document.getElementById("petal").innerText = "What is spirit growth?";
+            document.getElementById("question").innerText = question + "page";
+            document.getElementById("petal").style.fontSize = "40px";
+            document.getElementById("question").style.fontSize = "25px";
         }
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";

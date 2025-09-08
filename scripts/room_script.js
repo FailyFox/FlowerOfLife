@@ -28,6 +28,16 @@ function crystalImageReplace(crystals) {
                 document.getElementById('crystal6').style.top = '80%';
             });
             break;
+        case document.cookie.includes('url=spirit_growth.html'):
+            crystals.forEach(function(crystal) {
+                crystal.setAttribute('src', '../pictures/crystals/violet_crystal.png');
+                document.getElementById('crystal1').style.top = '83%';
+                document.getElementById('crystal2').style.top = '57%';
+                document.getElementById('crystal4').style.top = '46%';
+                document.getElementById('crystal5').style.top = '69%';
+                document.getElementById('crystal6').style.top = '85%';
+            });
+            break;
     }
 }
 
