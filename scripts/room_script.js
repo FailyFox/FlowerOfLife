@@ -58,6 +58,14 @@ function crystalImageReplace(crystals) {
                 document.getElementById('crystal5').style.top = '69%';
             });
             break;
+        case document.cookie.includes('url=self_improvement.html'):
+            crystals.forEach(function(crystal) {
+                crystal.setAttribute('src', '../pictures/crystals/gold_crystal.png');
+                document.getElementById('crystal1').style.top = '82%';
+                document.getElementById('crystal2').style.top = '55%';
+                document.getElementById('crystal4').style.top = '42%';
+            });
+            break;
     }
 }
 

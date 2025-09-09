@@ -91,4 +91,20 @@ switch (true) {
             document.getElementById("sun").innerHTML = "page";
         }
         break;
+    case document.cookie.includes("url=self_improvement.html"):
+        document.getElementById("body").style.backgroundColor = "#FFFBDF";
+        document.getElementById("img").style.filter = "drop-shadow(0 0 100px #FFC95F)";
+        if (document.getElementById("petal") && document.getElementById("question")) {
+            document.getElementById("petal").innerText = "What is self improvement?";
+            document.getElementById("question").innerText = question + "page";
+            document.getElementById("petal").style.fontSize = "40px";
+            document.getElementById("question").style.fontSize = "25px";
+        }
+        if (document.getElementById("diary")) {
+            document.getElementById("diary").innerText = "page";
+        }
+        if (document.cookie.includes("img=garden") && document.getElementById("sun")) {
+            document.getElementById("sun").innerHTML = "page";
+        }
+        break;
 }
