@@ -48,6 +48,16 @@ function crystalImageReplace(crystals) {
                 document.getElementById('crystal5').style.top = '70%';
             });
             break;
+        case document.cookie.includes('url=hobbies.html'):
+            crystals.forEach(function(crystal) {
+                crystal.setAttribute('src', '../pictures/crystals/orange_crystal.png');
+                document.getElementById('crystal1').style.top = '85%';
+                document.getElementById('crystal2').style.top = '57%';
+                document.getElementById('crystal3').style.top = '83%';
+                document.getElementById('crystal4').style.top = '45%';
+                document.getElementById('crystal5').style.top = '69%';
+            });
+            break;
     }
 }
 
