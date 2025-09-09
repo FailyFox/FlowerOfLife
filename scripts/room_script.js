@@ -38,6 +38,16 @@ function crystalImageReplace(crystals) {
                 document.getElementById('crystal6').style.top = '85%';
             });
             break;
+        case document.cookie.includes('url=health.html'):
+            crystals.forEach(function(crystal) {
+                crystal.setAttribute('src', '../pictures/crystals/red_crystal.png');
+                document.getElementById('crystal1').style.top = '85%';
+                document.getElementById('crystal2').style.top = '58%';
+                document.getElementById('crystal3').style.top = '83%';
+                document.getElementById('crystal4').style.top = '48%';
+                document.getElementById('crystal5').style.top = '70%';
+            });
+            break;
     }
 }
 
