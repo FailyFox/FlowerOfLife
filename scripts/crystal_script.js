@@ -49,7 +49,7 @@ switch (true) {
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is spirit growth?";
             document.getElementById("question").innerText = question + "page";
-            document.getElementById("petal").style.fontSize = "40px";
+            document.getElementById("petal").style.fontSize = "35px";
             document.getElementById("question").style.fontSize = "25px";
         }
         if (document.getElementById("diary")) {
@@ -65,8 +65,6 @@ switch (true) {
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is health?";
             document.getElementById("question").innerText = question + "page";
-            document.getElementById("petal").style.fontSize = "40px";
-            document.getElementById("question").style.fontSize = "25px";
         }
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";
@@ -81,8 +79,6 @@ switch (true) {
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is hobbie?";
             document.getElementById("question").innerText = question + "page";
-            document.getElementById("petal").style.fontSize = "40px";
-            document.getElementById("question").style.fontSize = "25px";
         }
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";
@@ -113,8 +109,6 @@ switch (true) {
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is family?";
             document.getElementById("question").innerText = question + "page";
-            document.getElementById("petal").style.fontSize = "40px";
-            document.getElementById("question").style.fontSize = "25px";
         }
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";
