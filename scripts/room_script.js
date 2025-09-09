@@ -66,6 +66,11 @@ function crystalImageReplace(crystals) {
                 document.getElementById('crystal4').style.top = '42%';
             });
             break;
+        case document.cookie.includes('url=family.html'):
+            crystals.forEach(function(crystal) {
+                crystal.setAttribute('src', '../pictures/crystals/pink_crystal.png');
+            });
+            break;
     }
 }
 
