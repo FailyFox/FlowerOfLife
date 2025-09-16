@@ -9,22 +9,55 @@
     <style>
         body { background-color: #BCDAF6; }
         .lock { position: absolute; top: 6.3%; left: -5.4%; }
+        .views_counter { margin-top: -54%; margin-right: 4%; }
     </style>
 </head>
 <body>
     <div class="doors-container">
-        <a href="../garden.html" class="door-link">
+        <a href="." id="garden_counter" class="door-link">
             <img src="../../pictures/doors/door_pink_dark.png" alt="Dark Pink Door">
             <img src="../../pictures/doors/lock.png" alt="Lock" class="lock">
+            <p class="views_counter">
+                <span id="garden_views"></span>
+            </p>
         </a>
-        <a href="../room.html" class="door-link">
+        <a href="." id="room_counter" class="door-link">
             <img src="../../pictures/doors/door_pink_light.png" alt="Light Pink Door">
             <img src="../../pictures/doors/lock.png" alt="Lock" class="lock">
+            <p class="views_counter">
+                <span id="room_views"></span>
+            </p>
         </a>
     </div>
     
     <script>
         document.cookie="url=family.html; path=/";
+        
+        fetch("https://counter.sipped.org/get/floweroflife/9fee0cc9e42857d6f4cc9f37a6366fac/family_garden")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("garden_views").innerText = data.count;
+            });
+        fetch("https://counter.sipped.org/get/floweroflife/9fee0cc9e42857d6f4cc9f37a6366fac/family_room")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("room_views").innerText = data.count;
+            });
+
+        document.getElementById("garden_counter").addEventListener("click", function(event) {
+            event.preventDefault();
+            fetch("https://counter.sipped.org/punch/floweroflife/9fee0cc9e42857d6f4cc9f37a6366fac/family_garden")
+                .then(() => {
+                    window.location.href = "../garden.html";
+                });
+        });
+        document.getElementById("room_counter").addEventListener("click", function(event) {
+            event.preventDefault();
+            fetch("https://counter.sipped.org/punch/floweroflife/9fee0cc9e42857d6f4cc9f37a6366fac/family_room")
+                .then(() => {
+                    window.location.href = "../room.html";
+                });
+        });
     </script>
 </body>
 </html>
