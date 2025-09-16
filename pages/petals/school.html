@@ -13,18 +13,50 @@
 </head>
 <body>
     <div class="doors-container">
-        <a href="../garden.html" class="door-link">
+        <a href="." id="garden_counter" class="door-link">
             <img src="../../pictures/doors/door_blue_dark.png" alt="Dark Blue Door">
             <img src="../../pictures/doors/lock.png" alt="Lock" class="lock">
+            <p class="views_counter">
+                <span id="garden_views"></span>
+            </p>
         </a>
-        <a href="../room.html" class="door-link">
+        <a href="." id="room_counter" class="door-link">
             <img src="../../pictures/doors/door_blue_light.png" alt="Light Blue Door">
             <img src="../../pictures/doors/lock.png" alt="Lock" class="lock">
+            <p class="views_counter">
+                <span id="room_views"></span>
+            </p>
         </a>
     </div>
     
     <script>
         document.cookie="url=school.html; path=/";
+        
+        fetch("https://counter.sipped.org/get/floweroflife/9fee0cc9e42857d6f4cc9f37a6366fac/school_garden")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("garden_views").innerText = data.count;
+            });
+        fetch("https://counter.sipped.org/get/floweroflife/9fee0cc9e42857d6f4cc9f37a6366fac/school_room")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("room_views").innerText = data.count;
+            });
+
+        document.getElementById("garden_counter").addEventListener("click", function(event) {
+            event.preventDefault();
+            fetch("https://counter.sipped.org/punch/floweroflife/9fee0cc9e42857d6f4cc9f37a6366fac/school_garden")
+                .then(() => {
+                    window.location.href = "../garden.html";
+                });
+        });
+        document.getElementById("room_counter").addEventListener("click", function(event) {
+            event.preventDefault();
+            fetch("https://counter.sipped.org/punch/floweroflife/9fee0cc9e42857d6f4cc9f37a6366fac/school_room")
+                .then(() => {
+                    window.location.href = "../room.html";
+                });
+        });
     </script>
 </body>
 </html>
