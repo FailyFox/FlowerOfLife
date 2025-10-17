@@ -20,7 +20,7 @@ switch (true) {
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "Who is a friend?";
             document.getElementById("question").innerText = "What is a friendship?" +
-            "Share all your ideas about that. And then have a look at the definition in your book - page 21";
+            "Share all your ideas about that. And then have a look at the definition in your book - page 19";
         }
         break;
     case document.cookie.includes("url=school.html"):
