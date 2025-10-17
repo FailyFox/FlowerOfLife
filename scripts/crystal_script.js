@@ -108,7 +108,7 @@ switch (true) {
         document.getElementById("img").style.filter = "drop-shadow(0 0 100px #FE6CCE)";
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is family?";
-            document.getElementById("question").innerText = question + "page";
+            document.getElementById("question").innerText = question + "page 13";
         }
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";
