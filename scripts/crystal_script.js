@@ -28,7 +28,7 @@ switch (true) {
         document.getElementById("img").style.filter = "drop-shadow(0 0 100px #7BA4EB)";
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is school?";
-            document.getElementById("question").innerText = question + "page";
+            document.getElementById("question").innerText = question + "page 45";
         }
         break;
     case document.cookie.includes("url=spirit_growth.html"):
