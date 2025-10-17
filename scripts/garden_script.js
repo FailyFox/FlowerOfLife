@@ -27,7 +27,7 @@ img.onload = function() {
     }
 
     function resizeEnvelopes() {
-        var envelopeSizeRatio = 0.04;
+        var envelopeSizeRatio = 0.03;
         var envelopeWidth = container.offsetWidth * envelopeSizeRatio;
 
         envelopes.forEach(function(envelope) {
