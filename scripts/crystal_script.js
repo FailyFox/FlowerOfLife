@@ -22,9 +22,6 @@ switch (true) {
             document.getElementById("question").innerText = "What is a friendship?" +
             "Share all your ideas about that. And then have a look at the definition in your book - page 21";
         }
-        if (document.getElementById("diary")) {
-            document.getElementById("diary").innerText = "page";
-        }
         break;
     case document.cookie.includes("url=school.html"):
         document.getElementById("body").style.backgroundColor = "#C1D6F9";
@@ -32,9 +29,6 @@ switch (true) {
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is school?";
             document.getElementById("question").innerText = question + "page";
-        }
-        if (document.getElementById("diary")) {
-            document.getElementById("diary").innerText = "page";
         }
         break;
     case document.cookie.includes("url=spirit_growth.html"):
@@ -46,9 +40,6 @@ switch (true) {
             document.getElementById("petal").style.fontSize = "35px";
             document.getElementById("question").style.fontSize = "25px";
         }
-        if (document.getElementById("diary")) {
-            document.getElementById("diary").innerText = "page";
-        }
         break;
     case document.cookie.includes("url=health.html"):
         document.getElementById("body").style.backgroundColor = "#CCDFBE";
@@ -57,9 +48,6 @@ switch (true) {
             document.getElementById("petal").innerText = "What is health?";
             document.getElementById("question").innerText = question + "page";
         }
-        if (document.getElementById("diary")) {
-            document.getElementById("diary").innerText = "page";
-        }
         break;
     case document.cookie.includes("url=hobbies.html"):
         document.getElementById("body").style.backgroundColor = "#FFF2DD";
@@ -67,9 +55,6 @@ switch (true) {
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is hobbie?";
             document.getElementById("question").innerText = question + "page";
-        }
-        if (document.getElementById("diary")) {
-            document.getElementById("diary").innerText = "page";
         }
         break;
     case document.cookie.includes("url=self_improvement.html"):
@@ -81,9 +66,6 @@ switch (true) {
             document.getElementById("petal").style.fontSize = "40px";
             document.getElementById("question").style.fontSize = "25px";
         }
-        if (document.getElementById("diary")) {
-            document.getElementById("diary").innerText = "page";
-        }
         break;
     case document.cookie.includes("url=family.html"):
         document.getElementById("body").style.backgroundColor = "#BCDAF6";
@@ -91,9 +73,6 @@ switch (true) {
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is family?";
             document.getElementById("question").innerText = question + "page 13";
-        }
-        if (document.getElementById("diary")) {
-            document.getElementById("diary").innerText = "page";
         }
         break;
 }
