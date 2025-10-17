@@ -46,7 +46,7 @@ switch (true) {
         document.getElementById("img").style.filter = "drop-shadow(0 0 100px #FB5634)";
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is health?";
-            document.getElementById("question").innerText = question + "page";
+            document.getElementById("question").innerText = question + "page 31";
         }
         break;
     case document.cookie.includes("url=hobbies.html"):
