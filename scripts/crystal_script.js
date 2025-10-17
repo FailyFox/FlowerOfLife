@@ -36,7 +36,7 @@ switch (true) {
         document.getElementById("img").style.filter = "drop-shadow(0 0 100px #B358BA)";
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is spirit growth?";
-            document.getElementById("question").innerText = question + "page";
+            document.getElementById("question").innerText = "page 49-50";
             document.getElementById("petal").style.fontSize = "35px";
             document.getElementById("question").style.fontSize = "25px";
         }
