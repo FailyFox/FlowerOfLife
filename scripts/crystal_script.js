@@ -25,9 +25,6 @@ switch (true) {
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";
         }
-        if (document.cookie.includes("img=garden") && document.getElementById("sun")) {
-            document.getElementById("sun").innerHTML = "page";
-        }
         break;
     case document.cookie.includes("url=school.html"):
         document.getElementById("body").style.backgroundColor = "#C1D6F9";
@@ -38,9 +35,6 @@ switch (true) {
         }
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";
-        }
-        if (document.cookie.includes("img=garden") && document.getElementById("sun")) {
-            document.getElementById("sun").innerHTML = "page";
         }
         break;
     case document.cookie.includes("url=spirit_growth.html"):
@@ -55,9 +49,6 @@ switch (true) {
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";
         }
-        if (document.cookie.includes("img=garden") && document.getElementById("sun")) {
-            document.getElementById("sun").innerHTML = "page";
-        }
         break;
     case document.cookie.includes("url=health.html"):
         document.getElementById("body").style.backgroundColor = "#CCDFBE";
@@ -69,9 +60,6 @@ switch (true) {
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";
         }
-        if (document.cookie.includes("img=garden") && document.getElementById("sun")) {
-            document.getElementById("sun").innerHTML = "page";
-        }
         break;
     case document.cookie.includes("url=hobbies.html"):
         document.getElementById("body").style.backgroundColor = "#FFF2DD";
@@ -82,9 +70,6 @@ switch (true) {
         }
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";
-        }
-        if (document.cookie.includes("img=garden") && document.getElementById("sun")) {
-            document.getElementById("sun").innerHTML = "page";
         }
         break;
     case document.cookie.includes("url=self_improvement.html"):
@@ -99,9 +84,6 @@ switch (true) {
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";
         }
-        if (document.cookie.includes("img=garden") && document.getElementById("sun")) {
-            document.getElementById("sun").innerHTML = "page";
-        }
         break;
     case document.cookie.includes("url=family.html"):
         document.getElementById("body").style.backgroundColor = "#BCDAF6";
@@ -112,9 +94,6 @@ switch (true) {
         }
         if (document.getElementById("diary")) {
             document.getElementById("diary").innerText = "page";
-        }
-        if (document.cookie.includes("img=garden") && document.getElementById("sun")) {
-            document.getElementById("sun").innerHTML = "page";
         }
         break;
 }
