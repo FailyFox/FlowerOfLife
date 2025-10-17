@@ -62,7 +62,7 @@ switch (true) {
         document.getElementById("img").style.filter = "drop-shadow(0 0 100px #FFC95F)";
         if (document.getElementById("petal") && document.getElementById("question")) {
             document.getElementById("petal").innerText = "What is self improvement?";
-            document.getElementById("question").innerText = question + "page";
+            document.getElementById("question").innerText = question + "page 41";
             document.getElementById("petal").style.fontSize = "40px";
             document.getElementById("question").style.fontSize = "25px";
         }
